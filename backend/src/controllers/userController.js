@@ -192,7 +192,7 @@ user.resetPasswordToken = hashed;
 user.resetPasswordExpires = Date.now() + 15 * 60 * 1000;
   await user.save();
 
-  const resetUrl = `http://localhost:5000/api/reset-password?token=${token}`;
+const resetUrl =`http://localhost:5173/reset-password/${token}`;
 
   await sendResetEmail(user.email, resetUrl);
 

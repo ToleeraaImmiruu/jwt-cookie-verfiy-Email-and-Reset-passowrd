@@ -2,6 +2,8 @@ import { useState } from "react";
 import { AxiosError } from "axios";
 import API from "../services/api"; // your axios instance
 import "../styles/auth.css";
+import { Link } from "react-router-dom";
+
 
 interface LoginData {
   email: string;
@@ -79,6 +81,7 @@ const Login = () => {
         <p>
           Don't have an account? <a href="/register">Register</a>
         </p>
+        <Link to="/forgot-password">Forgot Password?</Link>
       </form>
     </div>
   );
