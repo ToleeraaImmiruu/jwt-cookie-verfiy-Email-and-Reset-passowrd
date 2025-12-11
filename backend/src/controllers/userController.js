@@ -4,7 +4,6 @@ import jwt from "jsonwebtoken";
 import nodemailer from "nodemailer";
 import crypto from "crypto";
 
-
 import {generateAccessToken ,generateRefreshToken} from "../utils/token.js"
 import { generateEmailToken } from "../utils/emailToken.js";
 import { sendVerificationEmail } from "../utils/sendEmail.js";
